@@ -5,7 +5,7 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-plugin-FF6B35?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMMiAyMmgyMEwxMiAyeiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=)](https://openclaw.ai)
 [![Monad](https://img.shields.io/badge/Monad-live-836EF9)](https://monad.xyz)
 [![npm](https://img.shields.io/npm/v/pragma-openclaw)](https://www.npmjs.com/package/pragma-openclaw)
-[![Version](https://img.shields.io/badge/version-0.1.1-green.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.1.2-green.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > **Beta Software.** pragma is experimental and under active development. Trading involves risk of loss — use at your own discretion and never trade more than you can afford to lose.

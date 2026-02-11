@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2026-02-12
+
+### Changed
+- kairos agent: full 7-phase institutional trading workflow with 11-point kill switch checklist, mandatory bear case, 5-timeframe top-down analysis, market hours awareness, LeverUp platform constraints, context compaction recovery, and 17 risk management rules (261 → 672 lines)
+- thymos agent: complete 5-phase momentum trading workflow with sleep enforcement, narrative scanner, creator due diligence, monitoring cost budget, tranched profit-taking, and budget depletion thresholds (200 → 289 lines)
+- pragma agent: full 5-phase conditional execution framework with monitoring intervals, sleep enforcement, 4 example use cases, and structured communication format (248 → 308 lines)
+- all agents: replaced Claude Code `Bash()` references with OpenClaw `exec()` tool
+- all agents: removed Claude Code-specific SendMessage/TeammateTool references
+
 ## [0.1.1] - 2026-02-11
 
 ### Fixed
