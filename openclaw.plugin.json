@@ -1,7 +1,7 @@
 {
-  "id": "pragma",
+  "id": "pragma-openclaw",
   "name": "pragma",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vibetrading for OpenClaw — on-chain trading and market intelligence on monad",
   "skills": ["./skills"],
   "configSchema": {

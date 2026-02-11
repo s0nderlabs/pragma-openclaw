@@ -129,8 +129,8 @@ function ensurePragmaConfig(configPath: string): void {
 }
 
 const pragmaPlugin = {
-  id: "pragma",
-  name: "Pragma",
+  id: "pragma-openclaw",
+  name: "pragma",
   description:
     "On-chain trading and market intelligence on Monad",
   configSchema: {
