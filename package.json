@@ -1,0 +1,46 @@
+{
+  "name": "pragma-openclaw",
+  "version": "0.1.0",
+  "description": "pragma plugin for OpenClaw — on-chain trading and market intelligence on monad",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "server/index.js",
+    "openclaw.plugin.json",
+    "agents/",
+    "skills/"
+  ],
+  "scripts": {
+    "build:plugin": "esbuild src/index.ts --bundle --platform=node --target=node22 --outfile=dist/index.js --format=esm --banner:js=\"import { createRequire } from 'module'; const require = createRequire(import.meta.url);\"",
+    "sync": "cp ../pragma-mcp/servers/pragma-mcp/dist/index.js server/index.js && echo 'Synced server/index.js from pragma-mcp'",
+    "build": "npm run build:plugin",
+    "release": "npm run build:plugin && npm run sync && npm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "viem": "^2.23.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "s0nderlabs",
+    "url": "https://github.com/s0nderlabs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s0nderlabs/pragma-openclaw"
+  },
+  "homepage": "https://github.com/s0nderlabs/pragma-openclaw#readme",
+  "keywords": ["openclaw", "pragma", "monad", "trading", "mcp", "blockchain", "defi", "agent"],
+  "openclaw": {
+    "extensions": ["./dist/index.js"]
+  }
+}
