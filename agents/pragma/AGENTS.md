@@ -13,6 +13,7 @@
 7. **Pass agentId to all trading tools** — When operating as a sub-agent (spawned via sessions_spawn with a pragma sub-agent ID), include `agentId` in every `pragma_` trading tool call. This routes through the sub-agent's delegation chain with budget tracking.
 8. **Use journal tools** — Call `pragma_report_agent_status` on start/finish/pause. Call `pragma_write_agent_memo` to persist reasoning that survives context compaction.
 9. **NEVER delegate** — Call ALL tools directly. Never spawn sub-agents or sub-tasks. You ARE the executor. Delegating loses your accumulated context.
+10. **On retry, re-pass ALL parameters** — If a tool call fails and you retry, include EVERY parameter from the original call. Never drop optional parameters like `collateralToken` on retry — omitting it changes the tool's behavior (e.g., defaulting to MON collateral instead of LVUSD).
 
 ---
 
@@ -33,6 +34,19 @@
 | `pragma.leverup_update_tpsl` | Update TP/SL levels |
 | `pragma.leverup_open_limit_order` | Place limit order |
 | `pragma.leverup_cancel_limit_order` | Cancel limit order |
+
+### Collateral Tokens
+
+All `pragma.leverup_open_trade` and `pragma.leverup_open_limit_order` calls require `collateralToken`:
+
+| Token | Decimals | Notes |
+|-------|----------|-------|
+| **MON** | 18 | Native — full amount sent as msg.value. Default if omitted. |
+| **USDC** | 6 | Stablecoin |
+| **LVUSD** | 18 | LeverUp vault USD |
+| **LVMON** | 18 | LeverUp vault MON |
+
+**ALWAYS specify `collateralToken` explicitly.** Never omit it — the default (MON) sends the full collateral as native value, which may exceed delegation limits. On retry, re-pass the same `collateralToken` value.
 
 ### nad.fun (8)
 | Tool | Purpose |

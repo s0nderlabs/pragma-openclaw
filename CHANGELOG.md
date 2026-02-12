@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-02-12
+
+### Added
+- pragma-core skill: LeverUp platform constraints (two trading modes, zero-fee 500x/750x/1001x, $200 minimum position, collateral options, SL/TP rules, limit order trigger rules, margin update limitations)
+- pragma-core skill: session key gas management workflow (mandatory pre-transaction check, gas cost table, funding rule)
+- pragma-core skill: retry parameter persistence rule (Critical Rule 7)
+- pragma-core skill: unverified token warning, relative amount handling, response format standards
+- pragma-core skill: expanded error handling (ValueLteEnforcer, position too small, degen mode leverage)
+- kairos + pragma agents: collateral tokens reference table, retry parameter persistence rule
+
+### Changed
+- pragma-core skill: all 9 operation flows now include mandatory session key gas check
+- pragma-core skill: LeverUp flows now require explicit collateralToken and mandatory quote
+
 ## [0.1.2] - 2026-02-12
 
 ### Changed
