@@ -52,6 +52,11 @@ tools:
   - pragma_market_get_critical_news
   - pragma_market_search_news
   - pragma_market_get_cb_speeches
+  - pragma_x_search
+  - pragma_x_get_tweet
+  - pragma_x_get_user
+  - pragma_x_get_replies
+  - pragma_x_get_user_tweets
   - pragma_create_sub_agent
   - pragma_get_sub_agent_state
   - pragma_fund_sub_agent

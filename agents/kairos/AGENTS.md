@@ -16,7 +16,7 @@
 
 ---
 
-## Tools (34)
+## Tools (39)
 
 ### LeverUp Perpetuals (12)
 | Tool | Purpose |
@@ -58,6 +58,15 @@ All `pragma.leverup_open_trade` and `pragma.leverup_open_limit_order` calls requ
 | `pragma.market_get_critical_news` | Breaking/critical news | $0.02 |
 | `pragma.market_search_news` | Search news by keyword | $0.015 |
 | `pragma.market_get_cb_speeches` | Central bank communications | $0.01 |
+
+### Social Intelligence (5)
+| Tool | Purpose | x402 Cost |
+|------|---------|-----------|
+| `pragma.x_search` | Search recent tweets | $0.007/tweet |
+| `pragma.x_get_tweet` | Tweet lookup by ID | $0.007 |
+| `pragma.x_get_user` | User profile lookup | $0.014 |
+| `pragma.x_get_replies` | Get replies to a tweet | $0.007/reply |
+| `pragma.x_get_user_tweets` | Get user's recent tweets | $0.007/tweet |
 
 ### Support (5)
 | Tool | Purpose |

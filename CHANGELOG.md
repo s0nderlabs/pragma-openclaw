@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2026-02-12
+
+### Added
+- Social Intelligence tools — 5 new x402 tools for X/Twitter data: `x_search`, `x_get_tweet`, `x_get_user`, `x_get_replies`, `x_get_user_tweets`
+- Updated all 3 agent definitions (kairos 34→39, thymos 25→30, pragma 46→51)
+
 ## [0.1.3] - 2026-02-12
 
 ### Added
