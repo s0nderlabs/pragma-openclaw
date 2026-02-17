@@ -5,10 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.9] - 2026-02-17
+## [0.2.0] - 2026-02-17
 
 ### Fixed
 - Sync MCP server v0.8.56 — agent log returns newest entries first, MON budget uses net-aware check, DEX swap direction detection
+- Fix `openclaw.plugin.json` version never being updated (OpenClaw reads version from this file, not package.json)
 
 ## [0.1.8] - 2026-02-13
 
