@@ -1,6 +1,6 @@
 {
   "name": "pragma-openclaw",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "pragma plugin for OpenClaw — on-chain trading and market intelligence on monad",
   "type": "module",
   "main": "dist/index.js",
